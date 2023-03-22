@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<head>
+	<title>CSS FlexBox</title>
+	<style>
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		input {
+			font-size: 14px;
+			font-family: Helvetica, san-serif;
+		}
+
+		body {
+			background-color: lightgrey;
+			font-size: 14px;
+			font-family: Helvetica, san-serif;
+		}
+    h1{
+      max-width: 750px;
+			margin: 20px auto 0 auto;
+			padding: 20px;
+      text-align:center;
+			background-color: crimson;
+      border-radius:15px;
+    }
+
+		.container {
+			max-width: 750px;
+			margin: 20px auto 0 auto;
+			padding: 30px;
+			background-color: antiquewhite;
+		}
+
+		.form-row {
+			padding: 10px 0;
+			display: flex;
+		}
+
+		.form-row label {
+			padding-right: 10px;
+		}
+
+		.form-row input {
+			flex: 1;
+		}
+    .column-layout {
+      max-width:1200px;
+			margin: 40px auto 0 auto;
+			padding: 20px 50px;
+      lime-height:1.65;
+			background-color: antiquewhite;
+      display:flex;
+		}
+    .main-column{
+      flex:2;
+      order:2;
+    }
+    .sidebar-one{
+      flex:1;
+      order:1;
+    }
+    .sidebar-two{
+      flex:1;
+      order:3;
+    }
+	</style>
+</head>
+
+<body>
+	<h1>CSS FlexBox Properties</h1>
+	<div class="container">
+		<form action="">
+			<div class="form-row">
+				<label for="fname">First Name:</label>
+        <input type="text" id="fname">
+      </div>
+      <div class="form-row">
+       <label for="mname">Middle Name:</label>
+       <input type="text" id="mname">
+      </div>
+      <div class="form-row">
+       <label for="lname">Last Name:</label>
+       <input type="text" id="lname">
+      </div>
+      </div>
+    </form>
+  </div>
+  <h1>COLOUM LAYOUT</h1>
+  <div class="column-layout"> 
+    <div class="main-column">
+      <h2>Main Coloum</h2>
+      <p>The column boxes are ordered in the inline base direction of the multicol container and arranged into multicol lines. The column width is the length of the column box in the inline direction. The column height is the length of the column box in the block direction. All column boxes in a line have the same column width, and all column boxes in a line have the same column height.</p> 
+      <p>Within each multicol line in the multi-column container, adjacent column boxes are separated by a column gap, which may contain a column rule. All column gaps in the same multi-column container are equal. All column rules in the same multi-column container are also equal, if they appear; column rules only appear between columns that both have content.</p>
+      <p>In the simplest case a multicol container will contain only one line of columns, and the height of each column will be equivalent to the used height of the multi-column container’s content box. However, fragmentation or spanners can split the content of the multi-column container into multiple multicol lines.</p>
+    </div>
+    <div class="sidebar-one">
+      <h2>Sidebar One</h2>
+      <p>If the multi-column container is paginated, the height of each column is constrained by the page and the content continues in a new line of column boxes on the next page; a column box never splits across pages.</p> 
+    </div>
+    <div class="sidebar-two">
+      <h2>Sidebar Two</h2>
+      <p>The same effect occurs when a spanning element divides the multi-column container: the columns before the spanning element are balanced and shortened to fit their content. Content after the spanning element then flows into a new, subsequent line of column boxes.</p>  
+    </div>
+</body>
+</html>

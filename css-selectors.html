@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+  <title>CSS in Selectors</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+  /* element selector*/
+  p { 
+  text-align:center; color:blue;
+  }
+    /* element id selector*/
+  #para2{
+    text-align:left; color:green;
+  }
+    /* element class selector*/
+
+  .color{
+  text-align:right; color:red;
+  }    
+   /* element specific classselector*/
+  p.large{
+  font-size:300%;}
+      /* universal selector*/
+  *{
+border:3px solid orange;
+border-radius:15px;
+  }
+</style>
+</head>
+<body>
+<p>This is paragraph one.</p>
+<p id="para2">This is paragraph two.</p>
+<p class="color">This is paragraph third.</p>
+<p class="color">This is paragraph forth.</p>
+<p class="color large">This is paragraph fifth.</p>
+<p style="background-color:yellow;">This paragraph with inline CSS</p>
+
+</body>
+</html>

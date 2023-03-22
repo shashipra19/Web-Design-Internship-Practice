@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+<title>Border in CSS</title>
+<style>
+  body,html{
+    background:linear-gradient(to right,white,black);
+  }
+  div{
+    margin:20px;
+  }
+#tomato{
+  background-color:tomato;
+  border-width:5px;
+  border-color:black;
+  border-style:solid;
+    border-radius:0px 25px 0px 25px;
+}
+#seagreen{
+  background-color:seagreen;
+  border:5px groove red;
+  border-radius:100px;
+  }
+#gold{
+  background-color:gold;
+  border-style:dashed double solid dotted;
+  border-width:5px 8px 6px 3px;
+  border-color:blue red purple green;
+  }
+#cadetblue{
+  background-color:cadetblue;
+  border: 10px ridge yellow;
+  }
+.square{
+  height:200px;
+  width:200px;
+}
+</style>
+</head>
+<body>
+<div id="tomato" class="square"></div>
+<div id="seagreen" class="square"></div>
+<div id="gold" class="square"></div>
+<div id="cadetblue" class="square"></div>  
+</body>
+</html>

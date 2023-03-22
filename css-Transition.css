@@ -1,0 +1,25 @@
+body{
+  background-color:lightslategrey;
+}
+h2{
+  text-align:center;
+ margin: auto;
+}
+.circle{
+ background-color:crimson;
+ width:300px;
+ height:300px;
+ border-radius: 50%;
+ position: relative;
+ top: 200px;
+ margin: auto;
+ transition: background,border-radius, transform;
+ transition-duration: 2s ,2s;
+ //transition-delay: 0.3s, 2s;
+ transition-timing-function: ease-out;
+}
+.circle:hover{
+  background-color:rgba(0,250,255,1);
+  border-radius: 0%;
+  transform: rotateY(180deg);
+}

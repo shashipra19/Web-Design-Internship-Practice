@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+  <title>CSS Postioning</title>
+  <style>
+    #one{
+      background-color:cadetblue;
+      color:lightgreen;
+      width:300px;
+    }
+    .static{
+      background-color:seagreen;
+      color:navyblue;
+      width:300px;
+      position:static;
+    }
+    #two{
+      background-color:tomato;
+      color:lightgreen;
+      width:300px;
+      position:relative;
+      z-index:2;
+      opacity:0.6;
+    }
+    .relative{
+      background-color:lightgreen;
+      color:navyblue;
+      width:300px;
+      left:150px;
+      position:relative;
+      top:-100px;
+      z-index:1;
+    }
+    #three{
+      background-color:yellow;
+      color:lightgreen;
+      width:300px;
+    }
+    .absolute{
+      background-color:lightgreen;
+      color:navyblue;
+      width:300px;
+      left:100px;
+      position:absolute;
+    }
+    #four{
+      background-color:tomato;
+      color:lightgreen;
+      width:300px;
+    }
+    .fixed{
+      background-color:red;
+      color:navyblue;
+      width:300px;
+      position:fixed;
+      bottom:400px;
+    }
+  </style>
+</head>
+<body>
+  <div id="one">
+    <h1>Static Position</h1>
+    <p>An element with position:static; is not positioned in any special way; it is always positioned according to the normal flow of the page:</p>
+  </div>
+  <div class="static">
+    This div have static position properties value
+  </div><hr>
+  <div id="two">
+    <h1>Relative Position</h1>
+    <p>An element with position:relative; positioned relative to its normal position.</p>
+  </div>
+  <div class="relative">
+    This div have relative position properties value
+  </div><hr>
+  <div id="three">
+    <h1>Absolute Position</h1>
+    <p>An element with position:absolute; positioned relative to  the nearest positioned acestor(inserted of positionied relative to the viewpoint)</p>
+  </div>
+  <div class="relative">
+    <p class="absolute">This div have absolute position properties value</p>
+  </div><hr>
+  <div id="four">
+    <h1>Fixed Position</h1>
+    <p>An element with position:fixed; is positioned relative to   the viewport, which means its always fixed at same place even if web page scrolled.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ab rerum vel voluptatem vitae dolorem, veritatis fugit adipisci ducimus culpa, incidunt consequatur quia atque totam! Voluptates magnam, asperiores quidem reprehenderit vitae veniam aliquid iste laboriosam ducimus, officia nihil inventore fugit optio, fuga officiis dignissimos quis? Similique in quo tempore quod.</p>
+  </div>
+  <div class="fixed">
+    This div have fixed position properties value
+  </div>
+</body>
+</html>

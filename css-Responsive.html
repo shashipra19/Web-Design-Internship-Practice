@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Responsive</title>
+  <style>
+    .main-head{
+      background-color:crimson;
+      font-size:30px;
+      max-width:500px;
+      padding:30px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3) , 0 6px 20px 0 rgba(0,0,0,0.3);
+    }
+    ul {
+      list-style-image: linear-gradient(to left bottom, red, blue);
+      background:pink;
+      padding:10px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3) , 0 6px 20px 0 rgba(0,0,0,0.3);
+}
+ul li{
+  background:beige;
+  //padding:3px;
+  //margin-left:25px;
+  margin:5px;
+}
+a.button:link, a.button:visited{
+   background-color:white;
+   color:seagreen;
+   border:2px solid green;
+   border-radius:20px;
+   padding:10px 20px;
+   text-align:center;
+   text-decoration:none;
+   display:inline-block;
+}
+a.button:hover, a.button:active {
+background-color:seagreen;
+color:white;
+}
+div.cards{
+  width:65%;
+  background-color:antiquewhite;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3) , 0 6px 20px 0 rgba(0,0,0,0.3);
+  margin:30px;
+}
+div.caption{
+  text-align:center;
+  padding:5px 20px;
+}
+img{
+  width:100%;
+}
+img.thumb{
+border:2px solid lightblue;
+border-radius:5px;
+padding:5px;
+width:200px;
+}
+img.thumb:hover{
+  box-shadow: 0 0 4px 8px rgba(0, 140, 186, 0.5);
+ // width:400px;
+}
+  </style>
+</head>
+<body>
+  <h2 class="main-head">Responsive Webpages using CSS</h2>
+  <p>The list-style-image:url(""); property specify an image as the list item marker:</p>
+  <h3>Part of Trees</h3>
+  <ul>
+    <li>Leaf</li>
+    <li>Steam</li>
+    <li>Roots</li>
+    <li>Branch</li>
+    <li>Trunk</li>
+    <li>Flower</li>
+    <li>Fruit</li>
+  </ul>
+  <a href="css-Animation.html" target="_blank" class="button">Link to Animation using CSS!</a>
+  <hr>
+  <h2>Polaroid Image/Cards</h2>
+  <div class="cards">
+    <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2020/05/shutterstock_1504345343.jpg" alt="Northen Light">
+    <div class="caption">
+      <p>Northern Light</p>
+    </div>
+    </div>
+    <div class="cards">
+    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/weigela-styriaca-news-photo-1585845865.jpg" alt="Pink Flower Bush">
+    <div class="caption">
+      <p>Pink Flower Bush</p>
+    </div>
+  </div>
+  <a href="css-Animation.html" target="_blank">
+  <img src="https://resize.indiatvnews.com/en/resize/newbucket/715_-/2020/12/moon-names-1609296141.jpg" alt="MoonNight" class="thumb">
+  </a>
+</body>
+</html>

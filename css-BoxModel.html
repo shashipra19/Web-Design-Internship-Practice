@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+<title>BoxModel</title>
+<style>
+  html,body{
+    padding:0px;
+    margin:0px;
+  }
+  #sec-1st{
+    background:linear-gradient(tomato,lightgrey);
+    max-width:400px;
+    height:400px;
+  }
+  #sec-2nd{
+    background:linear-gradient(to right,lightgreen,lightgrey);
+    min-width:200px;
+    min-height:400px;
+  }
+  #green{
+    color:green;
+  }
+  .red{
+    color:red;
+  }
+  .underline{
+    text-decoration:underline;
+  }
+  div.boxmodel{
+    border:3px solid green;
+    background-color:tomato;
+    margin:25px;
+  }
+  p#boxpara{
+    background-color:lightgreen;
+    padding:25px;
+    text-align:center;
+  }
+</style>
+</head>
+<body>
+  <div class="boxmodel">
+    <p id="boxpara">
+      THIS IS PARAGRAPH UNDER BOX
+    </p>
+  </div>
+  <div id="sec-1st">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas velit ipsa laborum neque. Voluptatibus, placeat quasi est laboriosam modi fugiat doloribus repudiandae a dolor illo fugit suscipit, quia at porro.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi commodi, molestiae consequatur non optio sequi?
+    </p>
+  </div>
+  <div id="sec-2nd">
+    <p id="green">
+      This paragraph using green text with the help of paragraph id. <span class="underline">With span class underline</span>
+    </p>
+    <h2 class="red">This Heading is Red with h2 class</h2>
+  </div>
+  
+</body>
+</html>

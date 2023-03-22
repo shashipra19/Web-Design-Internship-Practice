@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Pseudo Classes & Elements</title>
+  <style>
+a:link{
+  color:green;
+  text-decoration:none;
+}
+a:hover{
+  color:red;
+}
+a:active{
+  background-color:gold;
+}
+a:visited{
+  color:lightgreen;
+}
+p.focus{
+  color:white;
+  background-color:slategrey;
+  width:300px;
+}
+p.focus:hover{
+  color:red;
+  background-color:lightgrey;
+  font-size:30px;
+  width:500px;
+}
+span{
+  display:none;
+  background-color:chocolate;
+  padding:10px;
+}
+p:hover span{
+  display:inline;
+}
+h2:first-child{
+  border:2px solid red;
+  max-width:300px;
+  border-radius:15px;
+}
+p::first-line{
+  text-transform:uppercase;
+}
+p::first-letter{
+  color:red;
+  font-size:30px;
+}
+h2::before{
+  content:url("");
+  background-image:url("https://i.pinimg.com/originals/bc/b3/19/bcb319b817317a6416f9f726bc96747f.jpg");
+  background-size:50px 50px;
+  background-repeat:none;
+  display:inline-block;
+  width:50px;
+  height:50px;
+}
+::selection{
+  color:red;
+  background-color:yellow;
+}
+  </style>
+</head>
+<body>
+  <h2>Pseudo Class for Link</h2>
+  <a href="index.html">Click Here to at Homepage!</a><br>
+  <a href="form.html">This link for HTML Form</a><br>
+  <h2>Put Cursor on Paragraph</h2>
+  <p class="focus">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam libero adipisci consectetur nemo iure animi vitae molestias ducimus praesentium qui rerum fuga, ullam aliquam. Tempora obcaecati quam labore soluta harum dolor suscipit quo? Autem magni voluptate expedita error dolores inventore repellat dolorum voluptatem nihil, facere deserunt hic doloribus magnam? Similique!</p>
+  <h2>PopUp on Hover</h2>
+  <p><strong>HTML Element:</strong><span>The HTML Elements defined by  Starting tags , some contant and Ending Tags</span></p>
+  <div id="one">
+    <h2>What are Pseudo Classes?</h2>
+    <p>A CSS pseudo class is used to define a special state of element.</p>
+  </div>
+  <div id="two">
+    <h2>What are Pseudo Elements?</h2>
+    <p>A CSS element is used to style specified part of an element.</p>
+  </div>
+</body>
+</html>

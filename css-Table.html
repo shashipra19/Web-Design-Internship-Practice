@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<head>
+	<title>CSS Table</title>
+	<style>
+    body,html{
+      background:linear-gradient(#b4ffe7,#ffd868);
+      height:100%;
+      width:auto;
+    }
+    .main-head{
+      font-size:30px;
+      background-color:crimson;
+      color:white;
+      text-align:center;
+      max-width:450px;
+      margin:20px auto 0 auto;
+      padding:30px;
+      border-radius:25px;
+    }
+    .main-head:hover{
+      background-color:green;
+      color:yellow;
+    }
+    .table-list{
+      border-collapse:collapse;
+      margin:20px auto 0 auto;
+      font-size:0.9em;
+      min-width:400px;
+      border-radius:5px 5px 0 0;
+      overflow:hidden;
+      padding:30px;
+      box-shadow:0 0 20px rgba(0,0,0,0.2)
+    }
+    .table-list thead tr{
+      background-color:seagreen;
+      color:white;
+      text-align:left;
+      font-weight:bold;
+    }
+    .table-list th,
+    .table-list td{
+      padding:12px 15px;
+    }
+    .table-list tbody tr{
+      border-bottom:1px solid lightslategrey;
+    }
+    .table-list tr:nth-of-type(even){
+      background-color:lightgrey;
+    }
+    .table-list tr:last-of-type{
+      border-bottom:2px solid seagreen;
+    }
+    .table-list tr.active-row{
+      font-weight:bold;
+      color:seagreen;
+    }
+    tr{
+      cursor:pointer;
+    }
+    tr:hover{
+      background-color:lightgrey;
+    }
+
+	</style>
+</head>
+
+<body>
+	<h1 class="main-head">CSS Properties in Table</h1>
+	<table class="table-list">
+		<thead>
+			<tr>
+				<th>Full Name</th>
+				<th>Roll No.</th>
+				<th>Branch</th>
+				<th>Future Designation</th>
+			</tr>
+		</thead>
+		<tr class="active-row">
+			<td>Rohit Yadav</td>
+			<td>190106040</td>
+			<td>Electronics Eng.</td>
+			<td>IAS Officer</td>
+		</tr>
+		<tr>
+			<td>Sudheer Singh</td>
+			<td>190106052</td>
+			<td>Electronics Eng.</td>
+			<td>Scientist</td>
+		</tr>
+		<tr class="active-row">
+			<td >Shubham Verma</td>
+			<td>190106048</td>
+			<td>Electronics Eng.</td>
+			<td>Software Eng.</td>
+		</tr>
+		<tr>
+			<td>Shashi Pratap</td>
+			<td>190106044</td>
+			<td>Electronics Eng.</td>
+			<td>Shop Somdutt</td>
+		</tr>
+	</table>
+</body>
+</html>

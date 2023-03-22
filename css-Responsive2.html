@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Responsive 2</title>
+  <style>
+    .breakpoints{
+      padding:20px;
+      color:blue;
+      font-size:8vw;
+    }
+    /*Smallest screen sizes*/
+    @media only screen and (max-width:600px){
+      .breakpoints{background-color:lightgreen;}
+    }
+    /*Small screen sizes*/
+    @media only screen and (min-width:600px){
+      .breakpoints{background-color:gold;}
+    }
+    /*Medium screen sizes*/
+    @media only screen and (min-width:768px){
+      .breakpoints{background-color:orange;}
+    }
+    /*Large screen sizes*/
+    @media only screen and (min-width:992px){
+      .breakpoints{background-color:pink;}
+    }
+    /*ExtraLarge screen sizes*/
+    @media only screen and (min-width:1200px){
+      .breakpoints{background-color:seagreen;}
+    }
+
+
+  </style>
+</head>
+<body>
+  <h2>Mediaquery Breakpoints</h2>
+  <p class="breakpoints">Breakpoints will help in creating a very responsive and adoptable webpage! according to differnt screen sizes.</p>
+</body>
+</html>
