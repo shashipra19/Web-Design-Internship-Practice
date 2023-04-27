@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+  <title>HTML DOM Selector getElementsByTagName</title>
+</head>
+<body>
+    <p class="test"> This is a paragraph of text.</p>
+<div class="block test">This is another paragraph of text.</div>
+    <p>This is another paragraph of text.</p>
+  <script>
+    var match=document.getElementsByClassName("test");
+    document.write("Number of selected element: "+match.length);
+    match[0].style.fontWeight="bold";
+    match[match.length-1].style.fontStyle="italic";
+    for(var elem in match){
+        match[elem].style.background="turquoise";
+    }
+  </script>
+</body>
+</html>

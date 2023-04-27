@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+  <title>HTML DOM Selector CSS Selector</title>
+</head>
+<body>
+    <ul>
+        <li>Bread</li>
+        <li class="tick">Coffee</li>
+        <li>Pineapple Cake</li>
+    </ul>
+  <script>
+    var match=document.querySelectorAll("ul li");
+    document.write("Number of selected element: " +match.length+ "<hr>");
+    
+    for(var elem in match){
+        document.write(elem.innerHTML+"<br>");
+    }
+    match=document.querySelectorAll("ul li.tick");
+    match[0].style.textDecoration="line-through";
+  </script>
+</body>
+</html>
